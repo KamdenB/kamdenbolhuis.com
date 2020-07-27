@@ -159,7 +159,7 @@ body {
   line-height: 1.5;
 }
 body#bg-image {
-  background: url(../img/background2.png);
+  background: url("../img/background2.png");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -230,79 +230,20 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-}
-.about-info .bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: #5246ff 3px solid;
-}
-.about-info .bio {
-  grid-area: bio;
-  font-size: 1.5rem;
-}
-.about-info .job-1 {
-  grid-area: job1;
-}
-.about-info .job-2 {
-  grid-area: job2;
-}
-.about-info .job-3 {
-  grid-area: job3;
-}
-.about-info .job {
-  background: #515151;
-  padding: 0.5rem;
-  border-bottom: #5246ff 5px solid;
-}
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-.projects img {
-  width: 100%;
-  border: 3px solid #fff;
-  transition: all 0.5s ease-out;
-}
-.projects img:hover {
-  opacity: 0.5;
-  border-color: #5246ff;
-  transition: all 0.5s ease-out;
-}
-
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  /* align-items: left; */
   margin-top: 1rem;
 }
-.boxes div {
+div.email {
   font-size: 2rem;
-  /* border: 3px solid; */
-  /* border-color: #fff; */
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem .5rem;
+  text-align: left;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
 }
-/* .boxes div:hover {
-  padding: 1.6rem 2.6rem;
-  background: #5246ff;
-  color: #000;
-}
-.boxes div:hover span {
-  transition: all 0.5s ease-out;
-  color: #000;
-} */
 
 #main-footer {
   text-align: center;
@@ -325,14 +266,14 @@ main#home h1 {
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  body#bg-image, body#contact {
     overflow: hidden;
   }
   body#bg-image::after {
     background: none;
   }
   h1.lg-heading {
-    font-size: 4.25rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
   }
   .menu .nav-link {
@@ -376,17 +317,9 @@ main#home h1 {
     height: 150px;
     width: 150px;
   }
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
-    grid-template-columns: 1fr;
-  }
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
+  .work-placeholder {
+    border-bottom: 3px solid #5246ff;
+    text-align: center;
   }
 }
 
