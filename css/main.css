@@ -46,7 +46,11 @@
   height: 100vh;
   overflow: hidden;
 }
+.menu-branding {
+  border-right: 1.5px solid #5246ff;
+}
 .menu-nav {
+  border-left: 1.5px solid #5246ff;
   margin: 0;
   padding: 0;
   background: rgba(55, 55, 55, 0.9);
@@ -297,8 +301,12 @@ div.email {
   div.menu-branding.show {
     transform: translate3d(0, 0, 0);
   }
+  .menu-branding {
+    border-right: none;
+  }
   .menu-nav {
     border-top: 4px solid #5246ff;
+    border-left: none;
     height: 75vh;
     transform: translate3d(100%, 0, 0);
     background:rgba(55, 55, 55, 1);
@@ -320,6 +328,13 @@ div.email {
   .work-placeholder {
     border-bottom: 3px solid #5246ff;
     text-align: center;
+  }
+  .fixed-bottom {
+    /* z-index: 5; */
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
   }
 }
 

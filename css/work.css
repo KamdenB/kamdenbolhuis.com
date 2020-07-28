@@ -38,9 +38,9 @@ body#work::after {
 }
 
 .work-placeholder {
+    display: table-cell;
     padding-top: 3rem;
     font-size: 2.5rem;
-    width: 20rem;
     border-bottom: 3px solid #5246ff;
 } 
 

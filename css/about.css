@@ -52,7 +52,15 @@ img.bio-image {
     body#about {
         background-attachment: fixed;
     }
-
+    p.job-desc {
+        margin:0;
+    }
+    p.job-desc~p {
+        margin-top: .3rem;
+    }
+    .about-jobs>div {
+        border-bottom: 3px solid #5246ff;
+    }
     .about, h1.lg-heading, .bio-favorites, .about-jobs {
         padding: 0;
     }
@@ -64,7 +72,7 @@ img.bio-image {
         display: none;
     }
     .bio {
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
     .bio-favorites, .about {
         padding-bottom: 1rem;
@@ -101,7 +109,7 @@ img.bio-image {
 /* Iphone 6/7/8 Plus */
 /* @media screen and (max-width: 750px) { 
     .about, h1.lg-heading, .bio-favorites, .about-jobs {
-        /* padding: 0 5rem; */
+        padding: 0 5rem;
     }
     h1.lg-heading {
         font-size: 3rem;
