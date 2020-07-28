@@ -47,25 +47,18 @@ img.bio-image {
     display: none;
 }
 
-@media screen and (max-wdith: 375px) {
-    .about, h1.lg-heading, .bio-favorites, .about-jobs {
-        padding: 0 5rem;
-    }
-    h1.lg-heading {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
+/* Iphone 6/7/8 Plus */
+@media screen and (max-width: 750px) {
     body#about {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 
     .about, h1.lg-heading, .bio-favorites, .about-jobs {
         padding: 0;
     }
     h1.lg-heading {
-        font-size: 4rem;
+        font-size: 3rem;
+        text-align: center;
     }
     .bio>h3 {
         display: none;
@@ -73,7 +66,7 @@ img.bio-image {
     .bio {
         margin-left: 1rem;
     }
-    .bio-favorites {
+    .bio-favorites, .about {
         padding-bottom: 1rem;
         border-bottom: 3px solid #5246ff;
         margin-bottom: 1rem;
@@ -104,6 +97,16 @@ img.bio-image {
         text-align: left;
     }
 }
+
+/* Iphone 6/7/8 Plus */
+/* @media screen and (max-width: 750px) { 
+    .about, h1.lg-heading, .bio-favorites, .about-jobs {
+        /* padding: 0 5rem; */
+    }
+    h1.lg-heading {
+        font-size: 3rem;
+    }
+} */
 
 /* .about-info {
     left: 0;
