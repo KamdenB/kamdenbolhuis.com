@@ -15,7 +15,7 @@ body#about::after {
     z-index: -1;
     background: rgba(68, 68, 68, 0.9);
 }
-.about, h1.lg-heading, .bio-favorites, .about-jobs {
+h1.lg-heading {
     padding: 0 10rem;
 }
 
@@ -27,6 +27,10 @@ body#about::after {
     /* width: 100%; */
 }
 
+.about, .bio-favorites, .about-jobs {
+    margin: 0 10rem;
+}
+
 img.bio-image {
     border-radius: 50%;
     border: #5246ff 3px solid;
@@ -36,15 +40,66 @@ img.bio-image {
 .bio {
     flex: 1 1 300px;
     padding-left: 1rem;
+    /* min-width: 400px; */
 }
 
-/* @media screen and (min-width: 1500px) {
-    .about, h1.lg-heading, .bio-favorites, .about-jobs {
-        padding: 0 5rem;
+.bio-favorites, .about, .about-jobs>div {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #5246ff;
+    margin-bottom: 1rem;
+}
+
+.job-desc {
+    margin: .3rem 0;
+}
+
+.job-desc~p {
+    margin-top: 0;
+}
+
+.about-jobs {
+    display: flex;
+    flex: 1 1 300px;
+    flex-wrap: wrap;
+}
+
+.about-jobs div {
+    max-width: 100%;
+    /* min-width: 300px; */
+}
+
+.about-jobs div p~p {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1020px) {
+   .bio {
+       padding: 0;
+   } 
+}
+
+@media screen and (max-width: 750px) {
+    .bio {
+        min-width: 70vw;
     }
-} */
-.mobile-break{
-    display: none;
+}
+
+@media screen and (max-width: 887px) {
+    h1.lg-heading {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    h1.lg-heading {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    h1.lg-heading {
+        font-size: 4.25rem;
+    }
 }
 
 /* Iphone 6/7/8 Plus */
@@ -59,6 +114,9 @@ img.bio-image {
         margin-top: .3rem;
     }
     .about-jobs>div {
+        width: 100%;
+        margin-top: .75rem;
+        padding-bottom: .75rem;
         border-bottom: 3px solid #5246ff;
     }
     .about, h1.lg-heading, .bio-favorites, .about-jobs {
@@ -68,23 +126,16 @@ img.bio-image {
         font-size: 3rem;
         text-align: center;
     }
-    .bio {
-        /* margin-left: 1rem; */
+    .about, .bio-favorites, .about-jobs {
+        margin: 0;
     }
-    .bio-favorites, .about {
-        padding-bottom: 1rem;
-        border-bottom: 3px solid #5246ff;
-        margin-bottom: 1rem;
+    
+    .bio-favorites {
+        padding: .75rem 0;
     }
-    .bio-favorites::after {
-        padding-bottom: 1rem;
-    }
-    /* main {
-        align-items: center;
-        text-align: center;
-    } */
     .about {
         width: 100%;
+        margin: 0;
     }
     .about .bio-image {
         display: block;
