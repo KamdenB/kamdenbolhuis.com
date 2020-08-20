@@ -38,7 +38,6 @@ img.bio-image {
 }
 
 .bio {
-    flex: 1 1 300px;
     padding-left: 1rem;
     /* min-width: 400px; */
 }
@@ -65,6 +64,7 @@ img.bio-image {
 
 .about-jobs div {
     max-width: 100%;
+    flex: 1 1 400px;
     /* min-width: 300px; */
 }
 
@@ -148,7 +148,6 @@ img.bio-image {
         padding: 0;
     }
     #about {
-        /* align-items: center; */
         text-align: left;
     }
 }
