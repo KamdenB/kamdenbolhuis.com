@@ -72,7 +72,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/portrait_3.png");
+  background: url("../img/portrait.png");
   background-color: #444;
   background-size: cover;
   border-radius: 50%;
@@ -320,7 +320,7 @@ div.email {
     background: rgba(68, 68, 68, 1);
   }
   .menu-branding .portrait {
-    background: url("../img/portrait_3_smaller.png");
+    background: url("../img/portrait_small.png");
     background-size: cover;
     height: 150px;
     width: 150px;
